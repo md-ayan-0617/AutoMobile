@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" fill="#111417" />
+  <!-- Diagonal left -->
+  <line x1="22" y1="80" x2="50" y2="20" stroke="#F7F8F9" stroke-width="8" stroke-linecap="square"/>
+  <!-- Diagonal right -->
+  <line x1="78" y1="80" x2="50" y2="20" stroke="#F7F8F9" stroke-width="8" stroke-linecap="square"/>
+  <!-- Horizontal cut -->
+  <line x1="32" y1="58" x2="68" y2="58" stroke="#2563FF" stroke-width="6"/>
+  <!-- Offset precision square -->
+  <rect x="52" y="32" width="7" height="7" fill="#FF5A1F" />
+</svg>

@@ -1,0 +1,451 @@
+@import './theme.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  transition: background-color 0.5s var(--ease-precision), color 0.4s ease;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  transition: background-color 0.5s var(--ease-precision), color 0.4s ease;
+}
+
+/* Universal Accessible Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--theme-accent) !important;
+  outline-offset: 3px !important;
+}
+
+/* Selection */
+::selection {
+  background: var(--theme-accent);
+  color: #FFFFFF;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-border-strong);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-accent);
+}
+
+/* Typography Classes */
+.font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.03em;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "zero", "tnum";
+  letter-spacing: -0.01em;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Scale Classes */
+.text-mega {
+  font-family: var(--font-heading);
+  font-size: clamp(64px, 12vw, 190px);
+  line-height: 0.9;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+}
+
+.text-hero {
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 9vw, 140px);
+  line-height: 0.94;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.035em;
+}
+
+.text-h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(40px, 6.5vw, 92px);
+  line-height: 0.98;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+.text-h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4.2vw, 64px);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.text-h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.8vw, 36px);
+  line-height: 1.18;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text-technical {
+  font-family: var(--font-mono);
+  font-size: clamp(10px, 0.85vw, 13px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--theme-text-secondary);
+}
+
+/* Layout Containers */
+.showroom-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 4rem);
+  padding-right: clamp(1.25rem, 4vw, 4rem);
+}
+
+.showroom-container-fluid {
+  width: 100%;
+  padding-left: clamp(1rem, 2.5vw, 2.5rem);
+  padding-right: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+/* Background Grid Overlay */
+.grid-bg-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, var(--theme-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--theme-grid) 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+/* Subtle Film Grain Noise */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Sharp Mechanical Buttons - Zero Rounded Pills */
+.btn-aurelis {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--theme-accent);
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.28s var(--ease-mechanical);
+}
+
+.btn-aurelis::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-aurelis:hover::before {
+  left: 100%;
+}
+
+.btn-aurelis:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px var(--theme-glow);
+}
+
+.btn-aurelis svg {
+  transition: transform 0.25s var(--ease-mechanical);
+}
+
+.btn-aurelis:hover svg {
+  transform: translateX(4px);
+}
+
+.btn-ghost {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: transparent;
+  color: var(--theme-text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.75rem;
+  border: 1px solid var(--theme-border-strong);
+  border-radius: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.28s var(--ease-mechanical);
+}
+
+.btn-ghost:hover {
+  background-color: var(--theme-text);
+  color: var(--theme-bg);
+  border-color: var(--theme-text);
+  transform: translateY(-2px);
+}
+
+.btn-ghost svg {
+  transition: transform 0.25s var(--ease-mechanical);
+}
+
+.btn-ghost:hover svg {
+  transform: translateX(4px);
+}
+
+/* Technical HUD Tag */
+.hud-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--theme-text-secondary);
+  padding: 0.25rem 0.65rem;
+  background: rgba(125, 125, 125, 0.08);
+  border: 1px solid var(--theme-border);
+  border-left: 2px solid var(--theme-accent);
+}
+
+/* Form Controls System */
+input, select, textarea {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  border-radius: 0px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:hover, select:hover, textarea:hover {
+  border-color: var(--theme-border-strong);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--theme-accent) !important;
+  box-shadow: 0 0 0 1px var(--theme-accent);
+}
+
+/* Blinking prompt cursor for kinetic typography */
+.typing-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.1em;
+  background-color: var(--theme-accent);
+  vertical-align: -0.15em;
+  margin-left: 4px;
+  animation: blinkCursor 0.9s infinite step-start;
+}
+
+@keyframes blinkCursor {
+  50% { opacity: 0; }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .typing-cursor {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Link and Button Reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Responsive Grid & Architecture System
+   ========================================================================== */
+.layout-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--grid-gap, 32px);
+}
+
+.col-12 { grid-column: span 12 / span 12; }
+.col-8 { grid-column: span 8 / span 8; }
+.col-7 { grid-column: span 7 / span 7; }
+.col-6 { grid-column: span 6 / span 6; }
+.col-5 { grid-column: span 5 / span 5; }
+.col-4 { grid-column: span 4 / span 4; }
+.col-3 { grid-column: span 3 / span 3; }
+
+@media (max-width: 960px) {
+  .layout-grid-12 {
+    gap: 24px;
+  }
+  .col-8, .col-7, .col-6, .col-5, .col-4, .col-3 {
+    grid-column: span 12 / span 12 !important;
+  }
+}
+
+/* ==========================================================================
+   Card System & Micro-Interactions
+   ========================================================================== */
+.aurelis-card {
+  background-color: var(--theme-card-bg);
+  border: 1px solid var(--theme-border);
+  transition: transform 0.3s var(--ease-mechanical), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aurelis-card:hover {
+  border-color: var(--theme-border-strong);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+.img-zoom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-zoom-parent img {
+  transition: transform 0.6s var(--ease-precision);
+}
+
+.aurelis-card:hover .img-zoom-parent img,
+.img-zoom-parent:hover img {
+  transform: scale(1.04);
+}
+
+/* ==========================================================================
+   Modal Dialog Framework
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(9, 11, 13, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  background-color: #111417;
+  border: 2px solid var(--theme-accent);
+  color: #F7F8F9;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================================================================
+   Form Stacking Utility
+   ========================================================================== */
+.form-row-2col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .form-row-2col {
+    grid-template-columns: 1fr !important;
+  }
+}
+

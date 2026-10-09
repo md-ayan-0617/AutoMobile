@@ -1,0 +1,106 @@
+:root {
+  /* Fonts */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-editorial: 'DM Serif Display', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Colors Base */
+  --color-graphite-dark: #111417;
+  --color-graphite-deep: #1B1F22;
+  --color-ice: #E9ECEF;
+  --color-electric-blue: #2563FF;
+  --color-signal-orange: #FF5A1F;
+  --color-metal-silver: #B9BEC3;
+  --color-pure-white: #F7F8F9;
+  --color-night-black: #090B0D;
+
+  /* Default (SHOWROOM) Theme */
+  --theme-bg: #E9ECEF;
+  --theme-surface: #F2F4F7;
+  --theme-surface-translucent: rgba(233, 236, 239, 0.85);
+  --theme-card-bg: #DFE3E8;
+  --theme-text: #111417;
+  --theme-text-secondary: #5F666B;
+  --theme-text-muted: #8E959B;
+  --theme-accent: #2563FF;
+  --theme-accent-secondary: #FF5A1F;
+  --theme-border: rgba(17, 20, 23, 0.12);
+  --theme-border-strong: rgba(17, 20, 23, 0.28);
+  --theme-grid: rgba(17, 20, 23, 0.05);
+  --theme-glow: rgba(37, 99, 255, 0.2);
+
+  /* Layout */
+  --header-height: 84px;
+  --container-max: 1680px;
+  --ease-mechanical: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-precision: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* 01. SHOWROOM THEME */
+[data-theme="showroom"] {
+  --theme-bg: #E9ECEF;
+  --theme-surface: #F2F4F7;
+  --theme-surface-translucent: rgba(233, 236, 239, 0.9);
+  --theme-card-bg: #DFE3E8;
+  --theme-text: #111417;
+  --theme-text-secondary: #5F666B;
+  --theme-text-muted: #8A9298;
+  --theme-accent: #2563FF;
+  --theme-accent-secondary: #FF5A1F;
+  --theme-border: rgba(17, 20, 23, 0.12);
+  --theme-border-strong: rgba(17, 20, 23, 0.24);
+  --theme-grid: rgba(17, 20, 23, 0.06);
+  --theme-glow: rgba(37, 99, 255, 0.25);
+}
+
+/* 02. PERFORMANCE THEME */
+[data-theme="performance"] {
+  --theme-bg: #111417;
+  --theme-surface: #1B1F22;
+  --theme-surface-translucent: rgba(17, 20, 23, 0.9);
+  --theme-card-bg: #161A1D;
+  --theme-text: #F7F8F9;
+  --theme-text-secondary: #9FA6AC;
+  --theme-text-muted: #646C73;
+  --theme-accent: #FF5A1F;
+  --theme-accent-secondary: #2563FF;
+  --theme-border: rgba(247, 248, 249, 0.12);
+  --theme-border-strong: rgba(255, 90, 31, 0.4);
+  --theme-grid: rgba(255, 90, 31, 0.05);
+  --theme-glow: rgba(255, 90, 31, 0.3);
+}
+
+/* 03. ELECTRIC THEME */
+[data-theme="electric"] {
+  --theme-bg: #DDE9FF;
+  --theme-surface: #E8F0FF;
+  --theme-surface-translucent: rgba(221, 233, 255, 0.9);
+  --theme-card-bg: #CFDEFA;
+  --theme-text: #101315;
+  --theme-text-secondary: #485361;
+  --theme-text-muted: #7A899C;
+  --theme-accent: #2563FF;
+  --theme-accent-secondary: #7A8CFF;
+  --theme-border: rgba(37, 99, 255, 0.18);
+  --theme-border-strong: rgba(37, 99, 255, 0.38);
+  --theme-grid: rgba(37, 99, 255, 0.07);
+  --theme-glow: rgba(37, 99, 255, 0.35);
+}
+
+/* 04. NIGHT DRIVE THEME */
+[data-theme="night-drive"] {
+  --theme-bg: #090B0D;
+  --theme-surface: #111417;
+  --theme-surface-translucent: rgba(9, 11, 13, 0.92);
+  --theme-card-bg: #13171A;
+  --theme-text: #F7F8F9;
+  --theme-text-secondary: #9098A0;
+  --theme-text-muted: #565E66;
+  --theme-accent: #65A0FF;
+  --theme-accent-secondary: #FF5A1F;
+  --theme-border: rgba(247, 248, 249, 0.09);
+  --theme-border-strong: rgba(101, 160, 255, 0.35);
+  --theme-grid: rgba(101, 160, 255, 0.04);
+  --theme-glow: rgba(101, 160, 255, 0.28);
+}
