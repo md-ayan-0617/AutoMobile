@@ -13,84 +13,84 @@ const MENU_ITEMS = [
     num: '01',
     label: 'CARS',
     path: '/cars',
-    previewImage: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/hero_car_graphite.jpg',
     caption: 'ALL CURRENT PRODUCTION MODELS & COMMISSIONS'
   },
   {
     num: '02',
     label: 'CONFIGURATOR',
     path: '/configurator',
-    previewImage: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/configuration_studio.jpg',
     caption: 'BESPOKE 3D VEHICLE STUDIO & MATERIAL CUSTOMIZER'
   },
   {
     num: '03',
     label: 'SHOWROOM',
     path: '/showroom',
-    previewImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/showroom_facade.jpg',
     caption: 'ARCHITECTURAL MOTOR HOUSE & EXHIBITION SPACES'
   },
   {
     num: '04',
     label: 'TEST DRIVE',
     path: '/test-drive',
-    previewImage: 'https://images.unsplash.com/photo-1508974239320-0a029497e820?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/night_drive.jpg',
     caption: 'RESERVE AN UNRESTRICTED DYNAMIC ROAD EVALUATION'
   },
   {
     num: '05',
     label: 'OFFERS',
     path: '/offers',
-    previewImage: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/performance_circuit.jpg',
     caption: 'EXCLUSIVE COMMISSION INCENTIVES & VALUATION PRIVILEGES'
   },
   {
     num: '06',
     label: 'PRE-OWNED',
     path: '/pre-owned',
-    previewImage: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/car_a9_gt.jpg',
     caption: '100+ POINT INSPECTED CERTIFIED PROVENANCE CARS'
   },
   {
     num: '07',
     label: 'EXPERIENCE',
     path: '/experience',
-    previewImage: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/performance_circuit.jpg',
     caption: 'ALPINE ROAD TOURS, TRACK PROVING DAYS & SALONS'
   },
   {
     num: '08',
     label: 'FINANCE',
     path: '/finance',
-    previewImage: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/design_interior.jpg',
     caption: 'TRANSPARENT BESPOKE LEASING & EMI CALCULATOR'
   },
   {
     num: '09',
     label: 'SERVICE',
     path: '/service',
-    previewImage: 'https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/service_bay.jpg',
     caption: 'CLINICAL HEPA WORKSHOP & TELEMETRY DIAGNOSTICS'
   },
   {
     num: '10',
     label: 'ABOUT',
     path: '/about',
-    previewImage: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/configuration_studio.jpg',
     caption: 'THE HERITAGE OF EMOTION & PRECISION ENGINEERING'
   },
   {
     num: '11',
     label: 'CAREERS',
     path: '/careers',
-    previewImage: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/electric_car.jpg',
     caption: 'SHAPE NEXT-GENERATION AUTOMOTIVE ARCHITECTURE'
   },
   {
     num: '12',
     label: 'CONTACT',
     path: '/contact',
-    previewImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
+    previewImage: '/images/showroom_lounge.jpg',
     caption: 'CONNECT DIRECTLY WITH THE VIP MOTOR HOUSE CONCIERGE'
   }
 ];

@@ -208,7 +208,7 @@ class ThreeErrorBoundary extends Component<{ children: React.ReactNode }, { hasE
       return (
         <div style={{ width: '100%', height: '100%', minHeight: '380px' }}>
           <SafeImage
-            src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1800&auto=format&fit=crop"
+            src="/images/hero_car_graphite.jpg"
             alt="Aurelis Motors Hero Vehicle Stage"
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />

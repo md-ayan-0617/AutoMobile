@@ -17,7 +17,7 @@ export const CERTIFIED_PREOWNED_VEHICLES: CertifiedPreOwnedVehicle[] = [
     inspectionPoints: 118,
     warrantyMonths: 24,
     location: 'Raipur Flagship Showroom',
-    image: 'https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/hero_car_graphite.jpg',
     certificationId: 'CPO-AR-2409-881'
   },
   {
@@ -36,7 +36,7 @@ export const CERTIFIED_PREOWNED_VEHICLES: CertifiedPreOwnedVehicle[] = [
     inspectionPoints: 124,
     warrantyMonths: 36,
     location: 'Raipur Flagship Showroom',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/car_e7_electric.jpg',
     certificationId: 'CPO-AR-2501-419'
   },
   {
@@ -55,7 +55,7 @@ export const CERTIFIED_PREOWNED_VEHICLES: CertifiedPreOwnedVehicle[] = [
     inspectionPoints: 118,
     warrantyMonths: 24,
     location: 'Raipur Flagship Showroom',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/car_x5_suv.jpg',
     certificationId: 'CPO-AR-2411-732'
   },
   {
@@ -74,7 +74,7 @@ export const CERTIFIED_PREOWNED_VEHICLES: CertifiedPreOwnedVehicle[] = [
     inspectionPoints: 130,
     warrantyMonths: 24,
     location: 'Raipur Flagship Showroom',
-    image: 'https://images.unsplash.com/photo-1541348263662-e0c8de4259ba?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/car_r8_sport.jpg',
     certificationId: 'CPO-AR-2408-011'
   }
 ];

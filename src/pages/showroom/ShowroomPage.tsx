@@ -51,7 +51,7 @@ export const ShowroomPage: React.FC = () => {
           }}
         >
           <SafeImage
-            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1800&auto=format&fit=crop"
+            src="/images/showroom_facade.jpg"
             alt="Aurelis Motor House Facade"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />

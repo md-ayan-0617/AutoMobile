@@ -92,7 +92,7 @@ class WheelErrorBoundary extends Component<{ children: React.ReactNode }, { hasE
       return (
         <div style={{ width: '100%', height: '100%', minHeight: '320px' }}>
           <SafeImage
-            src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop"
+            src="/images/wheel_alloy.jpg"
             alt="Aurelis Monoblock Wheel Detail"
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />

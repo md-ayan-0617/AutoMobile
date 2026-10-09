@@ -44,8 +44,8 @@ export const AboutPage: React.FC = () => {
           }}
         >
           <SafeImage
-            src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1800&auto=format&fit=crop"
-            alt="Aurelis design studio clay model"
+            src="/images/configuration_studio.jpg"
+            alt="Aurelis design studio"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
         </div>

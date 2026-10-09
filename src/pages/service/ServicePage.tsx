@@ -66,7 +66,7 @@ export const ServicePage: React.FC = () => {
           }}
         >
           <SafeImage
-            src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1800&auto=format&fit=crop"
+            src="/images/service_bay.jpg"
             alt="Clinical service bay"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
           />
